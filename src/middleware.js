@@ -25,5 +25,6 @@ export function middleware(request) {
 }
 
 export const config = {
-  middleware: true,
+ // middleware: true,
+  matcher: ["/api/:path*", "/userslist/:path*"],
 };
